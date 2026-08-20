@@ -8,7 +8,7 @@ Tests more than 20 combinations.
 
 import unittest
 
-from OrderManagement import (
+from OrderManagementQA import (
     Product,
     calculate_order,
     OrderProcessingError
