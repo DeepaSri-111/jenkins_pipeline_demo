@@ -184,5 +184,5 @@ if __name__ == "__main__":
         duration,
         lab_tests,
         medicine_cost,
-        insurance
+        insurance_input
     )
