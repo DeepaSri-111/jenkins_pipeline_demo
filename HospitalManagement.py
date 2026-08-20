@@ -158,7 +158,7 @@ if __name__ == "__main__":
 
     doctor = "Dr.Kumar"
 
-    department = Cardiology
+    department = "Cardiology"
 
     appointment_type = "Normal"
 
