@@ -152,46 +152,28 @@ if __name__ == "__main__":
     print(" HOSPITAL APPOINTMENT & BILLING")
     print("====================================")
 
-    patient_name = input("Enter patient name: ")
+    patient_name = "Deepa"
 
-    age = int(input("Enter age: "))
+    age = 35
 
-    doctor = input("Enter doctor name: ")
+    doctor = "Dr.Kumar"
 
-    department = input("Enter department: ")
+    department = Cardiology
 
-    appointment_type = input(
-        "Enter appointment type (Normal/Emergency/Follow-up): "
-    )
+    appointment_type = "Normal"
 
-    duration = int(
-        input("Enter consultation duration in minutes: ")
-    )
+    duration = 30
 
-    number_of_tests = int(
-        input("Enter number of lab tests: ")
-    )
+    number_of_tests = 2
 
-    lab_tests = []
+    lab_tests = ["Blood Test", "X-Ray"]
 
-    for i in range(number_of_tests):
+   
+    medicine_cost = 1000
 
-        test = input(
-            f"Enter lab test {i + 1} "
-            "(Blood Test/X-Ray/MRI/CT Scan): "
-        )
+    insurance_input = True
 
-        lab_tests.append(test)
-
-    medicine_cost = float(
-        input("Enter medicine cost: ₹")
-    )
-
-    insurance_input = input(
-        "Does patient have insurance? (yes/no): "
-    )
-
-    insurance = insurance_input.lower() == "yes"
+    
 
     HospitalManagement.generate_bill(
         patient_name,
